@@ -75,14 +75,14 @@
 		96EA4D421B4A3F7800C8ABAC /* play256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = play256.png; path = newicon/play256.png; sourceTree = "<group>"; };
 		96EA4D441B4A427400C8ABAC /* firstBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = firstBg.png; path = newicon/firstBg.png; sourceTree = "<group>"; };
 		96FDF9AE1B317ADA00E57F37 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
-		E644DE1C1974A2ED0018B14C /* gametetris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gametetris.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E644DE1C1974A2ED0018B14C /* Tetris 1980.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tetris 1980.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E644DE201974A2EE0018B14C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E644DE211974A2EE0018B14C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E644DE251974A2EE0018B14C /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		E644DE271974A2EE0018B14C /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		E644DE2A1974A2EE0018B14C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E644DE2C1974A2EE0018B14C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		E644DE321974A2EE0018B14C /* gametetrisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gametetrisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E644DE321974A2EE0018B14C /* Tetris 1980Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tetris 1980Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E644DE371974A2EE0018B14C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E644DE381974A2EE0018B14C /* SwiftrisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftrisTests.swift; sourceTree = "<group>"; };
 		F6037D16197DBFC6005331B5 /* JShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JShape.swift; sourceTree = "<group>"; };
@@ -168,8 +168,8 @@
 		E644DE1D1974A2ED0018B14C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E644DE1C1974A2ED0018B14C /* gametetris.app */,
-				E644DE321974A2EE0018B14C /* gametetrisTests.xctest */,
+				E644DE1C1974A2ED0018B14C /* Tetris 1980.app */,
+				E644DE321974A2EE0018B14C /* Tetris 1980Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -248,9 +248,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E644DE1B1974A2ED0018B14C /* gametetris */ = {
+		E644DE1B1974A2ED0018B14C /* Tetris 1980 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E644DE3C1974A2EE0018B14C /* Build configuration list for PBXNativeTarget "gametetris" */;
+			buildConfigurationList = E644DE3C1974A2EE0018B14C /* Build configuration list for PBXNativeTarget "Tetris 1980" */;
 			buildPhases = (
 				E644DE181974A2ED0018B14C /* Sources */,
 				E644DE191974A2ED0018B14C /* Frameworks */,
@@ -260,14 +260,14 @@
 			);
 			dependencies = (
 			);
-			name = gametetris;
+			name = "Tetris 1980";
 			productName = Swiftris;
-			productReference = E644DE1C1974A2ED0018B14C /* gametetris.app */;
+			productReference = E644DE1C1974A2ED0018B14C /* Tetris 1980.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E644DE311974A2EE0018B14C /* gametetrisTests */ = {
+		E644DE311974A2EE0018B14C /* Tetris 1980Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E644DE3F1974A2EE0018B14C /* Build configuration list for PBXNativeTarget "gametetrisTests" */;
+			buildConfigurationList = E644DE3F1974A2EE0018B14C /* Build configuration list for PBXNativeTarget "Tetris 1980Tests" */;
 			buildPhases = (
 				E644DE2E1974A2EE0018B14C /* Sources */,
 				E644DE2F1974A2EE0018B14C /* Frameworks */,
@@ -278,9 +278,9 @@
 			dependencies = (
 				E644DE341974A2EE0018B14C /* PBXTargetDependency */,
 			);
-			name = gametetrisTests;
+			name = "Tetris 1980Tests";
 			productName = SwiftrisTests;
-			productReference = E644DE321974A2EE0018B14C /* gametetrisTests.xctest */;
+			productReference = E644DE321974A2EE0018B14C /* Tetris 1980Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -302,7 +302,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E644DE171974A2ED0018B14C /* Build configuration list for PBXProject "gametetris" */;
+			buildConfigurationList = E644DE171974A2ED0018B14C /* Build configuration list for PBXProject "Tetris 1980" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -315,8 +315,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E644DE1B1974A2ED0018B14C /* gametetris */,
-				E644DE311974A2EE0018B14C /* gametetrisTests */,
+				E644DE1B1974A2ED0018B14C /* Tetris 1980 */,
+				E644DE311974A2EE0018B14C /* Tetris 1980Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -399,7 +399,7 @@
 /* Begin PBXTargetDependency section */
 		E644DE341974A2EE0018B14C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E644DE1B1974A2ED0018B14C /* gametetris */;
+			target = E644DE1B1974A2ED0018B14C /* Tetris 1980 */;
 			targetProxy = E644DE331974A2EE0018B14C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -503,7 +503,7 @@
 				INFOPLIST_FILE = Swiftris/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = gametetris;
+				PRODUCT_NAME = "Tetris 1980";
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -518,7 +518,7 @@
 				INFOPLIST_FILE = Swiftris/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = gametetris;
+				PRODUCT_NAME = "Tetris 1980";
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
@@ -537,7 +537,7 @@
 				);
 				INFOPLIST_FILE = SwiftrisTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = gametetrisTests;
+				PRODUCT_NAME = "Tetris 1980Tests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gametetris.app/gametetris";
 			};
 			name = Debug;
@@ -552,7 +552,7 @@
 				);
 				INFOPLIST_FILE = SwiftrisTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = gametetrisTests;
+				PRODUCT_NAME = "Tetris 1980Tests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gametetris.app/gametetris";
 			};
 			name = Release;
@@ -560,7 +560,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E644DE171974A2ED0018B14C /* Build configuration list for PBXProject "gametetris" */ = {
+		E644DE171974A2ED0018B14C /* Build configuration list for PBXProject "Tetris 1980" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E644DE3A1974A2EE0018B14C /* Debug */,
@@ -569,7 +569,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E644DE3C1974A2EE0018B14C /* Build configuration list for PBXNativeTarget "gametetris" */ = {
+		E644DE3C1974A2EE0018B14C /* Build configuration list for PBXNativeTarget "Tetris 1980" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E644DE3D1974A2EE0018B14C /* Debug */,
@@ -578,7 +578,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E644DE3F1974A2EE0018B14C /* Build configuration list for PBXNativeTarget "gametetrisTests" */ = {
+		E644DE3F1974A2EE0018B14C /* Build configuration list for PBXNativeTarget "Tetris 1980Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E644DE401974A2EE0018B14C /* Debug */,
