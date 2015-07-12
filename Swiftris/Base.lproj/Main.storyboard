@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A238x" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LVB-YS-i5n">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="CtS-rA-C9T">
+            <objects>
+                <viewController id="LVB-YS-i5n" customClass="GameViewController" customModule="gametetris" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PCf-gQ-wO7"/>
+                        <viewControllerLayoutGuide type="bottom" id="b3d-qh-BLL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bdc-N1-crn" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="722-vD-gaf">
+                                <rect key="frame" x="224" y="119" width="84" height="140"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="whitebg.png" translatesAutoresizingMaskIntoConstraints="NO" id="GSC-19-jso">
+                                        <rect key="frame" x="0.0" y="0.0" width="84" height="140"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SCORE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Osm-di-sIJ">
+                                        <rect key="frame" x="7" y="7" width="70" height="21"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="15"/>
+                                        <color key="textColor" red="0.1333333333" green="0.64705882349999999" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="FzF-c9-eO2">
+                                        <rect key="frame" x="0.0" y="33" width="84" height="39"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="35"/>
+                                        <color key="textColor" red="0.1333333333" green="0.64705882349999999" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="Yvq-RK-95K">
+                                        <rect key="frame" x="0.0" y="93" width="84" height="39"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="35"/>
+                                        <color key="textColor" red="0.1333333333" green="0.64705882349999999" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Highest" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIw-wN-a9I">
+                                        <rect key="frame" x="7" y="75" width="70" height="21"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="15"/>
+                                        <color key="textColor" red="0.1333333333" green="0.64705882349999999" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="12P-qT-5da">
+                                <rect key="frame" x="224" y="263" width="84" height="65"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="whitebg.png" translatesAutoresizingMaskIntoConstraints="NO" id="zv6-vI-V5e">
+                                        <rect key="frame" x="0.0" y="0.0" width="84" height="65"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LEVEL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glW-7T-edK">
+                                        <rect key="frame" x="7" y="4" width="70" height="21"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="15"/>
+                                        <color key="textColor" red="0.54509803921568623" green="0.45490196078431372" blue="0.76078431372549016" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="nkl-DQ-9XT">
+                                        <rect key="frame" x="0.0" y="21" width="84" height="39"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="35"/>
+                                        <color key="textColor" red="0.54509803921568623" green="0.45490196078431372" blue="0.76078431372549016" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                </subviews>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6Y-Ee-fqP" userLabel="LeftButton">
+                                <rect key="frame" x="224" y="373" width="24" height="44"/>
+                                <state key="normal" image="left.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="LeftButtonClick:" destination="LVB-YS-i5n" eventType="touchUpInside" id="A8j-KF-lfS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLj-D1-ocO" userLabel="RightButton">
+                                <rect key="frame" x="280" y="374" width="24" height="44"/>
+                                <state key="normal" image="right.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="RightButtonClick:" destination="LVB-YS-i5n" eventType="touchUpInside" id="ErT-c1-8sF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AfR-WV-4Rt" userLabel="PauseButton">
+                                <rect key="frame" x="246" y="324" width="40" height="49"/>
+                                <state key="normal" image="pause.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="PausePlayClick:" destination="LVB-YS-i5n" eventType="touchUpInside" id="t3p-C7-kbh"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xul-47-N34" userLabel="firstView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="firstBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="y3z-wQ-Tcu">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TOy-RR-KBb">
+                                        <rect key="frame" x="32" y="156" width="256" height="256"/>
+                                        <state key="normal" image="play256.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="PlayClick:" destination="LVB-YS-i5n" eventType="touchUpInside" id="FEE-Xb-Mhr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="y3z-wQ-Tcu" firstAttribute="top" secondItem="xul-47-N34" secondAttribute="top" id="Mly-OW-A8J"/>
+                                    <constraint firstAttribute="bottom" secondItem="y3z-wQ-Tcu" secondAttribute="bottom" id="QJM-GK-Ti4"/>
+                                    <constraint firstAttribute="centerX" secondItem="TOy-RR-KBb" secondAttribute="centerX" id="l9q-g2-jmt"/>
+                                    <constraint firstItem="y3z-wQ-Tcu" firstAttribute="leading" secondItem="xul-47-N34" secondAttribute="leading" id="oYn-t3-MeN"/>
+                                    <constraint firstAttribute="centerY" secondItem="TOy-RR-KBb" secondAttribute="centerY" id="vEf-gf-Q8r"/>
+                                    <constraint firstAttribute="trailing" secondItem="y3z-wQ-Tcu" secondAttribute="trailing" id="wzd-Ni-Mtn"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="b3d-qh-BLL" firstAttribute="top" secondItem="xul-47-N34" secondAttribute="bottom" id="JUt-RK-WSO"/>
+                            <constraint firstItem="xul-47-N34" firstAttribute="leading" secondItem="bdc-N1-crn" secondAttribute="leadingMargin" constant="-16" id="Qsd-Dp-gS5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xul-47-N34" secondAttribute="trailing" constant="-16" id="iuG-ux-lMp"/>
+                            <constraint firstItem="xul-47-N34" firstAttribute="top" secondItem="bdc-N1-crn" secondAttribute="topMargin" id="xEW-Z2-WLH"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="9ge-jr-8Iz" appends="YES" id="2VI-Mb-R29"/>
+                            <outletCollection property="gestureRecognizers" destination="s3C-Mx-Ytj" appends="YES" id="Ods-TD-EzA"/>
+                            <outletCollection property="gestureRecognizers" destination="g8e-Mj-EDG" appends="YES" id="eTe-gd-b3d"/>
+                        </connections>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="PanGes" destination="s3C-Mx-Ytj" id="wRc-aC-mmZ"/>
+                        <outlet property="PauseButton" destination="AfR-WV-4Rt" id="9P6-tB-KeW"/>
+                        <outlet property="SwipeGes" destination="g8e-Mj-EDG" id="ff0-Ni-dA5"/>
+                        <outlet property="firstView" destination="xul-47-N34" id="uyz-FZ-RC2"/>
+                        <outlet property="hightestLabel" destination="Yvq-RK-95K" id="QEb-MO-ci8"/>
+                        <outlet property="levelLabel" destination="nkl-DQ-9XT" id="y3z-8K-0gG"/>
+                        <outlet property="scoreLabel" destination="FzF-c9-eO2" id="Ok7-g7-24q"/>
+                        <outlet property="tapGes" destination="9ge-jr-8Iz" id="HNb-3x-k99"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="btX-cZ-eVz" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer enabled="NO" id="9ge-jr-8Iz">
+                    <connections>
+                        <action selector="didTap:" destination="LVB-YS-i5n" id="w0L-7F-9VY"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <panGestureRecognizer enabled="NO" minimumNumberOfTouches="1" id="s3C-Mx-Ytj">
+                    <connections>
+                        <action selector="didPan:" destination="LVB-YS-i5n" id="8pZ-Iw-2kD"/>
+                        <outlet property="delegate" destination="LVB-YS-i5n" id="bS6-PO-gSH"/>
+                    </connections>
+                </panGestureRecognizer>
+                <swipeGestureRecognizer enabled="NO" direction="down" id="g8e-Mj-EDG">
+                    <connections>
+                        <action selector="didSwipe:" destination="LVB-YS-i5n" id="vgR-DA-18W"/>
+                        <outlet property="delegate" destination="LVB-YS-i5n" id="mLt-II-D3a"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="firstBg.png" width="750" height="1334"/>
+        <image name="left.png" width="39" height="70"/>
+        <image name="pause.png" width="70" height="70"/>
+        <image name="play256.png" width="256" height="256"/>
+        <image name="right.png" width="39" height="70"/>
+        <image name="whitebg.png" width="84" height="100"/>
+    </resources>
+</document>
