@@ -9,7 +9,7 @@
         <!--Game View Controller-->
         <scene sceneID="CtS-rA-C9T">
             <objects>
-                <viewController id="LVB-YS-i5n" customClass="GameViewController" customModule="gametetris" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="LVB-YS-i5n" customClass="GameViewController" customModule="Colorful_Bricks" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PCf-gQ-wO7"/>
                         <viewControllerLayoutGuide type="bottom" id="b3d-qh-BLL"/>
@@ -106,7 +106,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xul-47-N34" userLabel="firstView">
                                 <rect key="frame" x="0.0" y="-16" width="320" height="584"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="firstBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="y3z-wQ-Tcu">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="b1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="y3z-wQ-Tcu">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="584"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TOy-RR-KBb">
@@ -179,7 +179,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="firstBg.png" width="750" height="1334"/>
+        <image name="b1.jpg" width="683" height="1024"/>
         <image name="left.png" width="39" height="70"/>
         <image name="pause.png" width="70" height="70"/>
         <image name="play256.png" width="256" height="256"/>

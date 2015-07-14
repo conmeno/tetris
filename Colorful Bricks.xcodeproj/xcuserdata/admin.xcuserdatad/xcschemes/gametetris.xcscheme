@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E644DE1B1974A2ED0018B14C"
-               BuildableName = "gametetris.app"
-               BlueprintName = "gametetris"
-               ReferencedContainer = "container:gametetris.xcodeproj">
+               BuildableName = "Colorful Bricks.app"
+               BlueprintName = "Colorful Bricks"
+               ReferencedContainer = "container:Colorful Bricks.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E644DE311974A2EE0018B14C"
-               BuildableName = "gametetrisTests.xctest"
-               BlueprintName = "gametetrisTests"
-               ReferencedContainer = "container:gametetris.xcodeproj">
+               BuildableName = "Colorful BricksTests.xctest"
+               BlueprintName = "Colorful BricksTests"
+               ReferencedContainer = "container:Colorful Bricks.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E644DE311974A2EE0018B14C"
-               BuildableName = "gametetrisTests.xctest"
-               BlueprintName = "gametetrisTests"
-               ReferencedContainer = "container:gametetris.xcodeproj">
+               BuildableName = "Colorful BricksTests.xctest"
+               BlueprintName = "Colorful BricksTests"
+               ReferencedContainer = "container:Colorful Bricks.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E644DE1B1974A2ED0018B14C"
-            BuildableName = "gametetris.app"
-            BlueprintName = "gametetris"
-            ReferencedContainer = "container:gametetris.xcodeproj">
+            BuildableName = "Colorful Bricks.app"
+            BlueprintName = "Colorful Bricks"
+            ReferencedContainer = "container:Colorful Bricks.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E644DE1B1974A2ED0018B14C"
-            BuildableName = "gametetris.app"
-            BlueprintName = "gametetris"
-            ReferencedContainer = "container:gametetris.xcodeproj">
+            BuildableName = "Colorful Bricks.app"
+            BlueprintName = "Colorful Bricks"
+            ReferencedContainer = "container:Colorful Bricks.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E644DE1B1974A2ED0018B14C"
-            BuildableName = "gametetris.app"
-            BlueprintName = "gametetris"
-            ReferencedContainer = "container:gametetris.xcodeproj">
+            BuildableName = "Colorful Bricks.app"
+            BlueprintName = "Colorful Bricks"
+            ReferencedContainer = "container:Colorful Bricks.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
@@ -105,7 +105,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
-      customArchiveName = "Colorful Wall"
+      customArchiveName = "Colorful Bricks"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

@@ -14,6 +14,7 @@
 		84CAC7D01B54AE8B006E0E30 /* drop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84CAC7C91B54AE8B006E0E30 /* drop.mp3 */; };
 		84CAC7D11B54AE8B006E0E30 /* gameover.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84CAC7CA1B54AE8B006E0E30 /* gameover.mp3 */; };
 		84CAC7D21B54AE8B006E0E30 /* levelup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84CAC7CB1B54AE8B006E0E30 /* levelup.mp3 */; };
+		84CAC7D41B54B883006E0E30 /* b1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84CAC7D31B54B883006E0E30 /* b1.jpg */; };
 		96EA4D3D1B4A35FD00C8ABAC /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 96EA4D381B4A35FD00C8ABAC /* info.png */; };
 		96EA4D3E1B4A35FD00C8ABAC /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = 96EA4D391B4A35FD00C8ABAC /* left.png */; };
 		96EA4D3F1B4A35FD00C8ABAC /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 96EA4D3A1B4A35FD00C8ABAC /* pause.png */; };
@@ -66,6 +67,7 @@
 		84CAC7C91B54AE8B006E0E30 /* drop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = drop.mp3; path = Sounds/drop.mp3; sourceTree = "<group>"; };
 		84CAC7CA1B54AE8B006E0E30 /* gameover.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = gameover.mp3; path = Sounds/gameover.mp3; sourceTree = "<group>"; };
 		84CAC7CB1B54AE8B006E0E30 /* levelup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = levelup.mp3; path = Sounds/levelup.mp3; sourceTree = "<group>"; };
+		84CAC7D31B54B883006E0E30 /* b1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = b1.jpg; sourceTree = "<group>"; };
 		96EA4D381B4A35FD00C8ABAC /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = info.png; path = newicon/info.png; sourceTree = "<group>"; };
 		96EA4D391B4A35FD00C8ABAC /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = left.png; path = newicon/left.png; sourceTree = "<group>"; };
 		96EA4D3A1B4A35FD00C8ABAC /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pause.png; path = newicon/pause.png; sourceTree = "<group>"; };
@@ -74,14 +76,14 @@
 		96EA4D421B4A3F7800C8ABAC /* play256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = play256.png; path = newicon/play256.png; sourceTree = "<group>"; };
 		96EA4D441B4A427400C8ABAC /* firstBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = firstBg.png; path = newicon/firstBg.png; sourceTree = "<group>"; };
 		96FDF9AE1B317ADA00E57F37 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
-		E644DE1C1974A2ED0018B14C /* gametetris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gametetris.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E644DE1C1974A2ED0018B14C /* Colorful Bricks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Colorful Bricks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E644DE201974A2EE0018B14C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E644DE211974A2EE0018B14C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E644DE251974A2EE0018B14C /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		E644DE271974A2EE0018B14C /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		E644DE2A1974A2EE0018B14C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E644DE2C1974A2EE0018B14C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		E644DE321974A2EE0018B14C /* gametetrisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gametetrisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E644DE321974A2EE0018B14C /* Colorful BricksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Colorful BricksTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E644DE371974A2EE0018B14C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E644DE381974A2EE0018B14C /* SwiftrisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftrisTests.swift; sourceTree = "<group>"; };
 		F6037D16197DBFC6005331B5 /* JShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JShape.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 		96EA4D371B4A354800C8ABAC /* newicon */ = {
 			isa = PBXGroup;
 			children = (
+				84CAC7D31B54B883006E0E30 /* b1.jpg */,
 				96EA4D441B4A427400C8ABAC /* firstBg.png */,
 				96EA4D421B4A3F7800C8ABAC /* play256.png */,
 				96EA4D381B4A35FD00C8ABAC /* info.png */,
@@ -164,8 +167,8 @@
 		E644DE1D1974A2ED0018B14C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E644DE1C1974A2ED0018B14C /* gametetris.app */,
-				E644DE321974A2EE0018B14C /* gametetrisTests.xctest */,
+				E644DE1C1974A2ED0018B14C /* Colorful Bricks.app */,
+				E644DE321974A2EE0018B14C /* Colorful BricksTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -231,9 +234,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E644DE1B1974A2ED0018B14C /* gametetris */ = {
+		E644DE1B1974A2ED0018B14C /* Colorful Bricks */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E644DE3C1974A2EE0018B14C /* Build configuration list for PBXNativeTarget "gametetris" */;
+			buildConfigurationList = E644DE3C1974A2EE0018B14C /* Build configuration list for PBXNativeTarget "Colorful Bricks" */;
 			buildPhases = (
 				E644DE181974A2ED0018B14C /* Sources */,
 				E644DE191974A2ED0018B14C /* Frameworks */,
@@ -243,14 +246,14 @@
 			);
 			dependencies = (
 			);
-			name = gametetris;
+			name = "Colorful Bricks";
 			productName = Swiftris;
-			productReference = E644DE1C1974A2ED0018B14C /* gametetris.app */;
+			productReference = E644DE1C1974A2ED0018B14C /* Colorful Bricks.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E644DE311974A2EE0018B14C /* gametetrisTests */ = {
+		E644DE311974A2EE0018B14C /* Colorful BricksTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E644DE3F1974A2EE0018B14C /* Build configuration list for PBXNativeTarget "gametetrisTests" */;
+			buildConfigurationList = E644DE3F1974A2EE0018B14C /* Build configuration list for PBXNativeTarget "Colorful BricksTests" */;
 			buildPhases = (
 				E644DE2E1974A2EE0018B14C /* Sources */,
 				E644DE2F1974A2EE0018B14C /* Frameworks */,
@@ -261,9 +264,9 @@
 			dependencies = (
 				E644DE341974A2EE0018B14C /* PBXTargetDependency */,
 			);
-			name = gametetrisTests;
+			name = "Colorful BricksTests";
 			productName = SwiftrisTests;
-			productReference = E644DE321974A2EE0018B14C /* gametetrisTests.xctest */;
+			productReference = E644DE321974A2EE0018B14C /* Colorful BricksTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -285,7 +288,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E644DE171974A2ED0018B14C /* Build configuration list for PBXProject "gametetris" */;
+			buildConfigurationList = E644DE171974A2ED0018B14C /* Build configuration list for PBXProject "Colorful Bricks" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -298,8 +301,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E644DE1B1974A2ED0018B14C /* gametetris */,
-				E644DE311974A2EE0018B14C /* gametetrisTests */,
+				E644DE1B1974A2ED0018B14C /* Colorful Bricks */,
+				E644DE311974A2EE0018B14C /* Colorful BricksTests */,
 			);
 		};
 /* End PBXProject section */
@@ -325,6 +328,7 @@
 				96EA4D411B4A35FD00C8ABAC /* right.png in Resources */,
 				84CAC7CE1B54AE8B006E0E30 /* bomb.mp3 in Resources */,
 				84CAC7D21B54AE8B006E0E30 /* levelup.mp3 in Resources */,
+				84CAC7D41B54B883006E0E30 /* b1.jpg in Resources */,
 				96EA4D401B4A35FD00C8ABAC /* play.png in Resources */,
 				F65F84EC19782EB80050EF35 /* background.png in Resources */,
 				96EA4D3D1B4A35FD00C8ABAC /* info.png in Resources */,
@@ -379,7 +383,7 @@
 /* Begin PBXTargetDependency section */
 		E644DE341974A2EE0018B14C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E644DE1B1974A2ED0018B14C /* gametetris */;
+			target = E644DE1B1974A2ED0018B14C /* Colorful Bricks */;
 			targetProxy = E644DE331974A2EE0018B14C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -483,8 +487,9 @@
 				INFOPLIST_FILE = Swiftris/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = gametetris;
+				PRODUCT_NAME = "Colorful Bricks";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -498,8 +503,9 @@
 				INFOPLIST_FILE = Swiftris/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = gametetris;
+				PRODUCT_NAME = "Colorful Bricks";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -517,8 +523,8 @@
 				);
 				INFOPLIST_FILE = SwiftrisTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = gametetrisTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gametetris.app/gametetris";
+				PRODUCT_NAME = "Colorful BricksTests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Colorful Bricks.app/Colorful Bricks";
 			};
 			name = Debug;
 		};
@@ -532,15 +538,15 @@
 				);
 				INFOPLIST_FILE = SwiftrisTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = gametetrisTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gametetris.app/gametetris";
+				PRODUCT_NAME = "Colorful BricksTests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Colorful Bricks.app/Colorful Bricks";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E644DE171974A2ED0018B14C /* Build configuration list for PBXProject "gametetris" */ = {
+		E644DE171974A2ED0018B14C /* Build configuration list for PBXProject "Colorful Bricks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E644DE3A1974A2EE0018B14C /* Debug */,
@@ -549,7 +555,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E644DE3C1974A2EE0018B14C /* Build configuration list for PBXNativeTarget "gametetris" */ = {
+		E644DE3C1974A2EE0018B14C /* Build configuration list for PBXNativeTarget "Colorful Bricks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E644DE3D1974A2EE0018B14C /* Debug */,
@@ -558,7 +564,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E644DE3F1974A2EE0018B14C /* Build configuration list for PBXNativeTarget "gametetrisTests" */ = {
+		E644DE3F1974A2EE0018B14C /* Build configuration list for PBXNativeTarget "Colorful BricksTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E644DE401974A2EE0018B14C /* Debug */,
