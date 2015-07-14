@@ -44,7 +44,21 @@ class GameScene: SKScene {
         shapeLayer.addChild(gameBoard)
         gameLayer.addChild(shapeLayer)
         
-        runAction(SKAction.repeatActionForever(SKAction.playSoundFileNamed("theme.mp3", waitForCompletion: true)))
+        let date = NSDate()
+        let calendar = NSCalendar.currentCalendar()
+        let components = calendar.components(.CalendarUnitHour | .CalendarUnitMinute, fromDate: date)
+        
+        let tmep = components.second%2
+        println(tmep)
+        if(tmep == 0)
+        {
+            runAction(SKAction.repeatActionForever(SKAction.playSoundFileNamed("1.mp3", waitForCompletion: true)))
+        }
+        else{
+            runAction(SKAction.repeatActionForever(SKAction.playSoundFileNamed("2.mp3", waitForCompletion: true)))
+        }
+        
+        
     }
     
     required init(coder aDecoder: NSCoder) {

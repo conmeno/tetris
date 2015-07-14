@@ -34,7 +34,7 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
         swiftris.moveShapeRight()
     }
     @IBAction func PausePlayClick(sender: AnyObject) {
-         var image = UIImage(named: "play.png") as UIImage?
+         //var image = UIImage(named: "play.png") as UIImage?
         if(play == 1)
         {
           PauseGame()
@@ -44,7 +44,7 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
            PlayGame()
         }
         
-        PauseButton.setImage(image, forState: .Normal)
+        //PauseButton.setImage(image, forState: .Normal)
         //
     }
     func PauseGame()
@@ -301,7 +301,7 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
             scene.animateCollapsingLines(removedLines.linesRemoved, fallenBlocks:removedLines.fallenBlocks) {
                 self.gameShapeDidLand(swiftris)
             }
-            scene.playSound("bomb.mp3")
+            scene.playSound("buzz2.mp3")
         } else {
             nextShape()
         }
