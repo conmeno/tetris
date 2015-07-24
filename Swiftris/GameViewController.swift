@@ -340,14 +340,14 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
             self.lbScoreOver.text = "Your score: " + String(highestScore)
            
             
-//            //show ad when gameover
-//            if (AdTapsy.isAdReadyToShow()) {
-//                println("Ad is ready to be shown");
-//                AdTapsy.showInterstitial(self);
-//                
-//            } else {
-//                println("Ad is not ready to be shown");
-//            }
+            //show ad when gameover
+            if (AdTapsy.isAdReadyToShow()) {
+                println("Ad is ready to be shown");
+                AdTapsy.showInterstitial(self);
+                
+            } else {
+                println("Ad is not ready to be shown");
+            }
         }
        
         
