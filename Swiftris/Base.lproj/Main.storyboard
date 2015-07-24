@@ -109,6 +109,11 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="firstBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="y3z-wQ-Tcu">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="584"/>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOs-eH-63R">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.9305263251" green="0.93131054400000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TOy-RR-KBb">
                                         <rect key="frame" x="32" y="164" width="256" height="256"/>
                                         <state key="normal" image="play256.png">
@@ -123,7 +128,9 @@
                                 <constraints>
                                     <constraint firstItem="y3z-wQ-Tcu" firstAttribute="top" secondItem="xul-47-N34" secondAttribute="top" id="Mly-OW-A8J"/>
                                     <constraint firstAttribute="bottom" secondItem="y3z-wQ-Tcu" secondAttribute="bottom" id="QJM-GK-Ti4"/>
+                                    <constraint firstItem="gOs-eH-63R" firstAttribute="top" secondItem="xul-47-N34" secondAttribute="top" constant="92" id="gtF-Cd-DYz"/>
                                     <constraint firstAttribute="centerX" secondItem="TOy-RR-KBb" secondAttribute="centerX" id="l9q-g2-jmt"/>
+                                    <constraint firstAttribute="centerX" secondItem="gOs-eH-63R" secondAttribute="centerX" id="oHi-1B-i1B"/>
                                     <constraint firstItem="y3z-wQ-Tcu" firstAttribute="leading" secondItem="xul-47-N34" secondAttribute="leading" id="oYn-t3-MeN"/>
                                     <constraint firstAttribute="centerY" secondItem="TOy-RR-KBb" secondAttribute="centerY" id="vEf-gf-Q8r"/>
                                     <constraint firstAttribute="trailing" secondItem="y3z-wQ-Tcu" secondAttribute="trailing" id="wzd-Ni-Mtn"/>
@@ -152,6 +159,7 @@
                         <outlet property="SwipeGes" destination="g8e-Mj-EDG" id="ff0-Ni-dA5"/>
                         <outlet property="firstView" destination="xul-47-N34" id="uyz-FZ-RC2"/>
                         <outlet property="hightestLabel" destination="Yvq-RK-95K" id="QEb-MO-ci8"/>
+                        <outlet property="lbScoreOver" destination="gOs-eH-63R" id="82l-q1-nnS"/>
                         <outlet property="levelLabel" destination="nkl-DQ-9XT" id="y3z-8K-0gG"/>
                         <outlet property="scoreLabel" destination="FzF-c9-eO2" id="Ok7-g7-24q"/>
                         <outlet property="tapGes" destination="9ge-jr-8Iz" id="HNb-3x-k99"/>

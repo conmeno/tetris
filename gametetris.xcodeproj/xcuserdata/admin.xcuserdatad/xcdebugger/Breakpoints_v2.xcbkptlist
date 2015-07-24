@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Swiftris/GameViewController.swift"
+            timestampString = "459423170.492837"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "PlayClick(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Swiftris/GameViewController.swift"
+            timestampString = "459423674.364293"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "GameViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "gametetris.GameViewController.scene.getter : Swift.ImplicitlyUnwrappedOptional&lt;gametetris.GameScene&gt;"
+                  moduleName = "gametetris"
+                  urlString = "file:///Users/admin/Desktop/App/tetris/Swiftris/GameViewController.swift"
+                  timestampString = "459418355.085375"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "gametetris.GameViewController.scene.setter : Swift.ImplicitlyUnwrappedOptional&lt;gametetris.GameScene&gt;"
+                  moduleName = "gametetris"
+                  urlString = "file:///Users/admin/Desktop/App/tetris/Swiftris/GameViewController.swift"
+                  timestampString = "459418355.085641"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "gametetris.GameViewController.scene.materializeForSet : Swift.ImplicitlyUnwrappedOptional&lt;gametetris.GameScene&gt;"
+                  moduleName = "gametetris"
+                  urlString = "file:///Users/admin/Desktop/App/tetris/Swiftris/GameViewController.swift"
+                  timestampString = "459418355.085816"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "gametetris.GameViewController.init (gametetris.GameViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; gametetris.GameViewController"
+                  moduleName = "gametetris"
+                  urlString = "file:///Users/admin/Desktop/App/tetris/Swiftris/GameViewController.swift"
+                  timestampString = "459418355.086039"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "952">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "gametetris.GameViewController.init (gametetris.GameViewController.Type)() -&gt; gametetris.GameViewController"
+                  moduleName = "gametetris"
+                  urlString = "file:///Users/admin/Desktop/App/tetris/Swiftris/GameViewController.swift"
+                  timestampString = "459418355.086203"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "884">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "gametetris.GameViewController.init (gametetris.GameViewController.Type)(coder : ObjectiveC.NSCoder) -&gt; gametetris.GameViewController"
+                  moduleName = "gametetris"
+                  urlString = "file:///Users/admin/Desktop/App/tetris/Swiftris/GameViewController.swift"
+                  timestampString = "459418355.086372"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "928">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Swiftris/GameViewController.swift"
+            timestampString = "459423170.492837"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "PlayClick(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

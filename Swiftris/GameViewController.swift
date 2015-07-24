@@ -10,11 +10,14 @@ import UIKit
 import SpriteKit
 import iAd
 
-class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognizerDelegate,ADBannerViewDelegate {
+class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognizerDelegate,ADBannerViewDelegate, AdTapsyDelegate {
 
-    var play = 1
+   
+    @IBOutlet weak var lbScoreOver: UILabel!
     var window:UIWindow?
     @IBOutlet weak var PauseButton: UIButton!
+    
+    @IBOutlet weak var PlayButton: UIButton!
     var savedScore: Int = 0
     @IBOutlet var tapGes: UITapGestureRecognizer!
     @IBOutlet var PanGes: UIPanGestureRecognizer!
@@ -22,6 +25,9 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
     var UIiAd: ADBannerView = ADBannerView()
     var SH = UIScreen.mainScreen().bounds.height
     var BV: CGFloat = 0
+    var played: Bool = false
+    var isPauseGame = false
+    var isGameOver = false
     
     @IBOutlet weak var hightestLabel: UILabel!
     //my edit
@@ -34,67 +40,86 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
         swiftris.moveShapeRight()
     }
     @IBAction func PausePlayClick(sender: AnyObject) {
-         //var image = UIImage(named: "play.png") as UIImage?
-        if(play == 1)
-        {
-          PauseGame()
-            
-        }else
-        {
-           PlayGame()
-        }
-        
-        //PauseButton.setImage(image, forState: .Normal)
-        //
+        PauseGame()
     }
     func PauseGame()
     {
-        scene.stopTicking()
-        play = 0
-        var image = UIImage(named: "play.png") as UIImage?
+        firstView.hidden = false
+              scene.stopTicking()
+       isPauseGame = true
+        //var image = UIImage(named: "play.png") as UIImage?
         tapGes.enabled = false
         PanGes.enabled = false
         SwipeGes.enabled = false
-        PauseButton.setImage(image, forState: .Normal)
+        //PauseButton.setImage(image, forState: .Normal)
+
+//        if (AdTapsy.isAdReadyToShow()) {
+//                        println("Ad is ready to be shown");
+//                        AdTapsy.showInterstitial(self);
+//        
+//                    } else {
+//                        println("Ad is not ready to be shown");
+//                    }
+
+    }
+    func GameOverConfig()
+    {
+         firstView.hidden = false
+        tapGes.enabled = false
+        PanGes.enabled = false
+        SwipeGes.enabled = false
+       
     }
     func PlayGame()
     {
-        tapGes.enabled = true
-        PanGes.enabled = true
-        SwipeGes.enabled = true
         scene.startTicking()
-        play = 1
-        var image = UIImage(named: "pause.png") as UIImage?
-        PauseButton.setImage(image, forState: .Normal)
+       
+//        var image = UIImage(named: "pause.png") as UIImage?
+//        PauseButton.setImage(image, forState: .Normal)
     }
     @IBAction func PlayClick(sender: AnyObject) {
+        lbScoreOver.hidden = true
+        played = true
+        // PlayButton.hidden = true
+        PauseButton.hidden = false
         tapGes.enabled = true
         PanGes.enabled = true
         SwipeGes.enabled = true
         // Configure the view.
         firstView.hidden = true
-        let skView = view as SKView
-        skView.multipleTouchEnabled = false
-       
-        // Create and configure the scene.
-        scene = GameScene(size: skView.bounds.size)
-        scene.scaleMode = .AspectFill
-        scene.tick = didTick
-        
-        swiftris = Swiftris()
-        swiftris.delegate = self
-        swiftris.beginGame()
-        
-        // Present the scene.
-        skView.presentScene(scene)
-       
-        
-        if(NSUserDefaults.standardUserDefaults().objectForKey("HighestScore") != nil)
+        if(isGameOver || isPauseGame == false)
         {
-        savedScore = NSUserDefaults.standardUserDefaults().objectForKey("HighestScore") as Int
-      
+            let skView = view as SKView
+            skView.multipleTouchEnabled = false
+            
+            // Create and configure the scene.
+            scene = GameScene(size: skView.bounds.size)
+            scene.scaleMode = .AspectFill
+            scene.tick = didTick
+            
+            swiftris = Swiftris()
+            swiftris.delegate = self
+            swiftris.beginGame()
+            
+            // Present the scene.
+            skView.presentScene(scene)
+            
+            
+            if(NSUserDefaults.standardUserDefaults().objectForKey("HighestScore") != nil)
+            {
+                savedScore = NSUserDefaults.standardUserDefaults().objectForKey("HighestScore") as Int
+                
+            }
+            hightestLabel.text = String(savedScore)
+            isGameOver = false
         }
-          hightestLabel.text = String(savedScore)
+        else
+        {
+            
+                PlayGame()
+ 
+        }
+       
     }
     //end my edit
     var scene: GameScene!
@@ -108,7 +133,10 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
     override func viewDidLoad() {
         super.viewDidLoad()
         UIiAd.alpha = 0
-     
+        PauseButton.hidden = true
+        AdTapsy.setDelegate(self);
+
+      AdTapsy.showInterstitial(self);
     }
 
     override func prefersStatusBarHidden() -> Bool {
@@ -178,6 +206,39 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
     }
     //end iad
     
+    
+    //ad
+    // Add delegate functions
+    func adtapsyDidClickedAd() {
+        println("***adtapsyDidClickedAd***");
+    }
+    
+    func adtapsyDidFailedToShowAd() {
+        println("***adtapsyDidFailedToShowAd***");
+    }
+    
+    func adtapsyDidShowAd() {
+        println("***adtapsyDidShowAd***");
+//        if(played)
+//        {
+//         firstView.hidden = false
+//        }
+        
+        
+    }
+    
+    func adtapsyDidSkippedAd() {
+        println("close ad");
+        
+        
+        
+    }
+    
+    func adtapsyDidCachedAd() {
+        println("***adtapsyDidCachedAd***");
+    }
+    //end ad
+
     
     
     
@@ -256,10 +317,11 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
     }
     
     func gameDidEnd(swiftris: Swiftris) {
+       
         view.userInteractionEnabled = false
         scene.stopTicking()
         scene.playSound("gameover.mp3")
-        
+        isGameOver = true
         //To save highest score
         var highestScore:Int = swiftris.score
         if(highestScore > savedScore)
@@ -270,8 +332,27 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
         }
         
         scene.animateCollapsingLines(swiftris.removeAllBlocks(), fallenBlocks: Array<Array<Block>>()) {
-            swiftris.beginGame()
+             swiftris.beginGame()
+             self.PauseGame()
+            //self.GameOverConfig()
+            self.lbScoreOver.hidden = false
+            
+            self.lbScoreOver.text = "Your score: " + String(highestScore)
+           
+            
+//            //show ad when gameover
+//            if (AdTapsy.isAdReadyToShow()) {
+//                println("Ad is ready to be shown");
+//                AdTapsy.showInterstitial(self);
+//                
+//            } else {
+//                println("Ad is not ready to be shown");
+//            }
         }
+       
+        
+        
+        
     }
     
     func gameDidLevelUp(swiftris: Swiftris) {
