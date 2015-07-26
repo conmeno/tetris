@@ -9,7 +9,7 @@
         <!--Game View Controller-->
         <scene sceneID="CtS-rA-C9T">
             <objects>
-                <viewController id="LVB-YS-i5n" customClass="GameViewController" customModule="gametetris" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="LVB-YS-i5n" customClass="GameViewController" customModule="falling_bricks" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PCf-gQ-wO7"/>
                         <viewControllerLayoutGuide type="bottom" id="b3d-qh-BLL"/>
@@ -128,7 +128,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oY8-9h-dL8">
                                                 <rect key="frame" x="0.0" y="0.0" width="352" height="100"/>
-                                                <state key="normal" title="Quang Cao">
+                                                <state key="normal">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -136,7 +136,7 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" red="1" green="0.60525949710000004" blue="0.42381435940000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.65211001710222072" green="0.7719601881498579" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="oY8-9h-dL8" firstAttribute="top" secondItem="zCK-on-Aho" secondAttribute="top" id="8No-xi-a8g"/>
                                             <constraint firstItem="oY8-9h-dL8" firstAttribute="leading" secondItem="zCK-on-Aho" secondAttribute="leading" id="JNw-WJ-cm8"/>
@@ -145,12 +145,28 @@
                                             <constraint firstAttribute="bottom" secondItem="oY8-9h-dL8" secondAttribute="bottom" id="vGM-1z-UBv"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oi5-hO-ItZ">
+                                        <rect key="frame" x="8" y="473" width="187" height="61"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="187" id="Cpf-48-9UL"/>
+                                            <constraint firstAttribute="height" constant="61" id="QZb-YV-jIM"/>
+                                        </constraints>
+                                        <state key="normal" title="More App Phuong Nguyen">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="MoreAppClick:" destination="LVB-YS-i5n" eventType="touchUpInside" id="4u4-2E-aax"/>
+                                            <action selector="showTopBannerClick:" destination="LVB-YS-i5n" eventType="touchDragOutside" id="2aH-dt-6Pn"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="zCK-on-Aho" firstAttribute="top" secondItem="xul-47-N34" secondAttribute="top" id="6VY-B1-ZJb"/>
                                     <constraint firstItem="y3z-wQ-Tcu" firstAttribute="top" secondItem="xul-47-N34" secondAttribute="top" id="Mly-OW-A8J"/>
                                     <constraint firstAttribute="bottom" secondItem="y3z-wQ-Tcu" secondAttribute="bottom" id="QJM-GK-Ti4"/>
+                                    <constraint firstItem="Oi5-hO-ItZ" firstAttribute="leading" secondItem="xul-47-N34" secondAttribute="leading" constant="8" id="Qt2-n1-mc9"/>
+                                    <constraint firstAttribute="bottom" secondItem="Oi5-hO-ItZ" secondAttribute="bottom" constant="50" id="ROz-YA-Otp"/>
                                     <constraint firstItem="zCK-on-Aho" firstAttribute="leading" secondItem="xul-47-N34" secondAttribute="leading" constant="-16" id="cPx-AX-WFd"/>
                                     <constraint firstItem="gOs-eH-63R" firstAttribute="top" secondItem="xul-47-N34" secondAttribute="top" constant="92" id="gtF-Cd-DYz"/>
                                     <constraint firstAttribute="centerX" secondItem="TOy-RR-KBb" secondAttribute="centerX" id="l9q-g2-jmt"/>
@@ -179,6 +195,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="Adview" destination="zCK-on-Aho" id="yuX-iK-GlT"/>
                         <outlet property="PanGes" destination="s3C-Mx-Ytj" id="wRc-aC-mmZ"/>
                         <outlet property="PauseButton" destination="AfR-WV-4Rt" id="9P6-tB-KeW"/>
                         <outlet property="SwipeGes" destination="g8e-Mj-EDG" id="ff0-Ni-dA5"/>

@@ -29,6 +29,22 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
     var isPauseGame = false
     var isGameOver = false
     
+    //@IBOutlet weak var Adview: UIView!
+   
+    @IBOutlet weak var Adview: UIView!
+    
+    
+    @IBAction func MoreAppClick(sender: AnyObject) {
+        var barsLink : String = "itms-apps://itunes.apple.com/us/artist/phuong-thanh-nguyen/id1019089261"
+        UIApplication.sharedApplication().openURL(NSURL(string: barsLink)!)
+        
+    }
+    
+    
+    @IBAction func showTopBannerClick(sender: AnyObject) {
+          Adview.hidden = false
+    }
+    
     @IBAction func QuangCaoClick(sender: AnyObject) {
         
         if (AdTapsy.isAdReadyToShow()) {
@@ -144,6 +160,7 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        Adview.hidden = true
         UIiAd.alpha = 0
         PauseButton.hidden = true
         AdTapsy.setDelegate(self);

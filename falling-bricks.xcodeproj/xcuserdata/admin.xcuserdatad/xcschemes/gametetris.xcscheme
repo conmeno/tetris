@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E644DE1B1974A2ED0018B14C"
                BuildableName = "gametetris.app"
-               BlueprintName = "gametetris"
-               ReferencedContainer = "container:gametetris.xcodeproj">
+               BlueprintName = "falling-bricks"
+               ReferencedContainer = "container:falling-bricks.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -30,8 +30,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E644DE311974A2EE0018B14C"
                BuildableName = "gametetrisTests.xctest"
-               BlueprintName = "gametetrisTests"
-               ReferencedContainer = "container:gametetris.xcodeproj">
+               BlueprintName = "falling-bricksTests"
+               ReferencedContainer = "container:falling-bricks.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -48,8 +48,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E644DE311974A2EE0018B14C"
                BuildableName = "gametetrisTests.xctest"
-               BlueprintName = "gametetrisTests"
-               ReferencedContainer = "container:gametetris.xcodeproj">
+               BlueprintName = "falling-bricksTests"
+               ReferencedContainer = "container:falling-bricks.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -58,8 +58,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E644DE1B1974A2ED0018B14C"
             BuildableName = "gametetris.app"
-            BlueprintName = "gametetris"
-            ReferencedContainer = "container:gametetris.xcodeproj">
+            BlueprintName = "falling-bricks"
+            ReferencedContainer = "container:falling-bricks.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,8 +77,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E644DE1B1974A2ED0018B14C"
             BuildableName = "gametetris.app"
-            BlueprintName = "gametetris"
-            ReferencedContainer = "container:gametetris.xcodeproj">
+            BlueprintName = "falling-bricks"
+            ReferencedContainer = "container:falling-bricks.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,8 +95,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E644DE1B1974A2ED0018B14C"
             BuildableName = "gametetris.app"
-            BlueprintName = "gametetris"
-            ReferencedContainer = "container:gametetris.xcodeproj">
+            BlueprintName = "falling-bricks"
+            ReferencedContainer = "container:falling-bricks.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
@@ -105,7 +105,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
-      customArchiveName = "Colorful Wall"
+      customArchiveName = "Falling Bricks Classic"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
