@@ -29,6 +29,18 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
     var isPauseGame = false
     var isGameOver = false
     
+    @IBAction func QuangCaoClick(sender: AnyObject) {
+        
+        if (AdTapsy.isAdReadyToShow()) {
+            println("Ad is ready to be shown");
+            AdTapsy.showInterstitial(self);
+            
+        } else {
+            println("Ad is not ready to be shown");
+        }
+        
+        
+    }
     @IBOutlet weak var hightestLabel: UILabel!
     //my edit
     @IBAction func LeftButtonClick(sender: AnyObject) {

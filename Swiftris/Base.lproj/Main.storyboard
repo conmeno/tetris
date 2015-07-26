@@ -109,7 +109,7 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="firstBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="y3z-wQ-Tcu">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="584"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOs-eH-63R">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOs-eH-63R">
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.9305263251" green="0.93131054400000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -123,13 +123,38 @@
                                             <action selector="PlayClick:" destination="LVB-YS-i5n" eventType="touchUpInside" id="FEE-Xb-Mhr"/>
                                         </connections>
                                     </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zCK-on-Aho">
+                                        <rect key="frame" x="-16" y="0.0" width="352" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oY8-9h-dL8">
+                                                <rect key="frame" x="0.0" y="0.0" width="352" height="100"/>
+                                                <state key="normal" title="Quang Cao">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="QuangCaoClick:" destination="LVB-YS-i5n" eventType="touchUpInside" id="S96-ld-fzQ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.60525949710000004" blue="0.42381435940000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="oY8-9h-dL8" firstAttribute="top" secondItem="zCK-on-Aho" secondAttribute="top" id="8No-xi-a8g"/>
+                                            <constraint firstItem="oY8-9h-dL8" firstAttribute="leading" secondItem="zCK-on-Aho" secondAttribute="leading" id="JNw-WJ-cm8"/>
+                                            <constraint firstAttribute="height" constant="100" id="Pyy-r7-ksg"/>
+                                            <constraint firstAttribute="trailing" secondItem="oY8-9h-dL8" secondAttribute="trailing" id="dcg-xT-WGM"/>
+                                            <constraint firstAttribute="bottom" secondItem="oY8-9h-dL8" secondAttribute="bottom" id="vGM-1z-UBv"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="zCK-on-Aho" firstAttribute="top" secondItem="xul-47-N34" secondAttribute="top" id="6VY-B1-ZJb"/>
                                     <constraint firstItem="y3z-wQ-Tcu" firstAttribute="top" secondItem="xul-47-N34" secondAttribute="top" id="Mly-OW-A8J"/>
                                     <constraint firstAttribute="bottom" secondItem="y3z-wQ-Tcu" secondAttribute="bottom" id="QJM-GK-Ti4"/>
+                                    <constraint firstItem="zCK-on-Aho" firstAttribute="leading" secondItem="xul-47-N34" secondAttribute="leading" constant="-16" id="cPx-AX-WFd"/>
                                     <constraint firstItem="gOs-eH-63R" firstAttribute="top" secondItem="xul-47-N34" secondAttribute="top" constant="92" id="gtF-Cd-DYz"/>
                                     <constraint firstAttribute="centerX" secondItem="TOy-RR-KBb" secondAttribute="centerX" id="l9q-g2-jmt"/>
+                                    <constraint firstAttribute="trailing" secondItem="zCK-on-Aho" secondAttribute="trailing" constant="-16" id="mFT-Sq-SsY"/>
                                     <constraint firstAttribute="centerX" secondItem="gOs-eH-63R" secondAttribute="centerX" id="oHi-1B-i1B"/>
                                     <constraint firstItem="y3z-wQ-Tcu" firstAttribute="leading" secondItem="xul-47-N34" secondAttribute="leading" id="oYn-t3-MeN"/>
                                     <constraint firstAttribute="centerY" secondItem="TOy-RR-KBb" secondAttribute="centerY" id="vEf-gf-Q8r"/>
